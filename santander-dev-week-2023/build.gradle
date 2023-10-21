@@ -15,6 +15,12 @@ repositories {
 	mavenCentral()
 }
 
+tasks.jar {
+	manifest{
+		attributes["Main-Class"] = "com.santanderdevweek2023.Application"
+	}
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
