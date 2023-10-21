@@ -31,6 +31,6 @@ classDiagram
 
     Autor "1" *-- "N" Livro
     Usuario "1" -- "0, N" LivrosEmprestados : tem
-    
+    Usuario -- Livro : faz_empréstimo
 
 ```
