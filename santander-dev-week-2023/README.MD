@@ -24,13 +24,13 @@ classDiagram
         nome: String
     }
 
-    class LivrosEmprestados {
+    class LivroEmprestado {
         id_usuario: Integer
         id_livro: Integer
     }
 
     Autor "1" *-- "N" Livro
-    Usuario "1" -- "0, N" LivrosEmprestados : tem
+    Usuario "1" -- "0, N" LivroEmprestado : tem
     Usuario -- Livro : faz_empréstimo
 
 ```
