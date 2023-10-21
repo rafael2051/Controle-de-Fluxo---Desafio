@@ -6,13 +6,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Interface que define o padrão <b>Strategy</b> no domínio do autor. Assim,
- * poderemos fazer outras implementações se for necessário
- *
- * @author rafael2051
- */
-
 public interface AutorService {
 
     /**
