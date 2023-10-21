@@ -29,7 +29,6 @@ classDiagram
         id_livro: String
     }
 
-    Livro -- Autor : possui
-    Usuario -- LivrosEmprestados : realiza_emprestimo
-    Livro -- LivrosEmprestados : possui
+    Autor *-- Livro
+
 ```
