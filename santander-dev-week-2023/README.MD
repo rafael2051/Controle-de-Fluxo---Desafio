@@ -8,7 +8,7 @@ classDiagram
     class Livro {
         id: Integer
         titulo: String
-        autor_id: String
+        autor_id: Integer
         ano_publicacao: String
         genero: String
     }
