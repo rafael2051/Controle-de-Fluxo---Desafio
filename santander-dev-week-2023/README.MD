@@ -6,30 +6,32 @@ ___
 ```mermaid
 classDiagram
     class Livro {
-        id: String
+        id: Integer
         titulo: String
-        autor_id: String
+        autor_id: Integer
         ano_publicacao: String
         genero: String
     }
 
     class Autor {
-        id: String
+        id: Integer
         nome: String
         nacionalidade: String
     }
 
     class Usuario {
-        id: String
+        id: Integer
         nome: String
     }
 
-    class LivrosEmprestados {
-        id_usuario: String
-        id_livro: String
+    class LivroEmprestado {
+        id: Integer
+        id_usuario: Integer
+        id_livro: Integer
     }
 
-    Livro -- Autor : possui
-    Usuario -- LivrosEmprestados : realiza_emprestimo
-    Livro -- LivrosEmprestados : possui
+    Autor "1" *-- "N" Livro
+    Usuario "1" -- "0, N" LivroEmprestado : tem
+    Usuario -- Livro : faz_empréstimo
+
 ```
