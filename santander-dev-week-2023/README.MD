@@ -6,7 +6,7 @@ ___
 ```mermaid
 classDiagram
     class Livro {
-        id: String
+        id: Integer
         titulo: String
         autor_id: String
         ano_publicacao: String
@@ -14,19 +14,19 @@ classDiagram
     }
 
     class Autor {
-        id: String
+        id: Integer
         nome: String
         nacionalidade: String
     }
 
     class Usuario {
-        id: String
+        id: Integer
         nome: String
     }
 
     class LivrosEmprestados {
-        id_usuario: String
-        id_livro: String
+        id_usuario: Integer
+        id_livro: Integer
     }
 
     Autor "1" *-- "N" Livro
