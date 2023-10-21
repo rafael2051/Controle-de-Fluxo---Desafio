@@ -29,6 +29,7 @@ classDiagram
         id_livro: String
     }
 
-    Autor *-- Livro
+    Autor "1" *-- "N" Livro
+    
 
 ```
