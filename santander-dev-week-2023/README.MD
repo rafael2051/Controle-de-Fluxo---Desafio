@@ -25,6 +25,7 @@ classDiagram
     }
 
     class LivroEmprestado {
+        id: Integer
         id_usuario: Integer
         id_livro: Integer
     }
