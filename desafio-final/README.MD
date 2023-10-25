@@ -11,7 +11,7 @@ Projeto desenvolvido para o desafio "Publicando Sua API REST na Nuvem
 Usando Spring Boot 3, Java 17 e Railway" do Santander Bootcamp 2023 -
 Backend Java da DIO. Desenvolvi minha api considerando o contexto de 
 uma biblioteca, e além dos enpoints para consultar dados do banco de dados,
-também fiz endpoints para pegar um livro empretado, que cria um novo
+também fiz endpoints para pegar um livro emprestado, que cria um novo
 registro na tabela de livros emprestados, e devolver um livro, que apaga
 uma linha da tabela de livros emprestados usando o id.
 
